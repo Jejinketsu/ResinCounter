@@ -1,8 +1,8 @@
 import React from 'react';
-//import Main from './src/pages/Main.js';
+import Main from './src/pages/Main.js';
 
 const App = () => {
-  return <Text>Hello</Text>;
+  return <Main />;
 };
 
 export default App;
