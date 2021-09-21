@@ -1,35 +1,39 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
-import colors from '../default_style.js';
+import {StyleSheet} from 'react-native';
+import colors from '../../styles/default_style.js';
 
 export default StyleSheet.create({
     domain_card: {
         width: '97%',
         marginTop: 5,
+        marginBottom: 5,
         padding: 5,
         backgroundColor: colors.weak_color,
         borderColor: colors.ternary_color,
         borderWidth: 2,
-        
+
         flexDirection: 'row',
+        justifyContent: 'space-between',
     },
     domain_card_left_side: {
         flex: 1,
+        maxWidth: '49%',
     },
     domain_card_rigth_side: {
         flex: 1,
+        maxWidth: '49%',
     },
     domain_name: {
-        fontFamily: "HYWenHei 85W",
+        fontFamily: 'HYWenHei 85W',
         fontSize: 18,
     },
     domain_type_text: {
-        fontFamily: "HYWenHei 85W",
+        fontFamily: 'HYWenHei 85W',
         fontSize: 10,
         color: colors.ternary_color,
     },
     rewards_text: {
-        fontFamily: "HYWenHei 85W",
+        fontFamily: 'HYWenHei 85W',
         fontSize: 12,
         color: colors.ternary_color,
         alignSelf: 'center',
@@ -43,5 +47,6 @@ export default StyleSheet.create({
         borderWidth: 1,
         borderColor: colors.strong_color,
         margin: 3,
+        alignSelf: 'flex-start',
     },
 });
