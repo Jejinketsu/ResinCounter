@@ -22,7 +22,7 @@ const DomainCard = ({navigation, name, type, rewards}) => {
                             <TouchableOpacity
                                 onPress={() =>
                                     navigation.navigate('Item', {
-                                        name: item.name,
+                                        item: item,
                                     })
                                 }>
                                 <Image
